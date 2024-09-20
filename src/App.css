@@ -1,0 +1,347 @@
+/** ----------------multiple-------------------- */
+
+    .App {
+        text-align: center;
+        font-family: Geneva, Verdana, sans-serif;
+
+    }
+
+    h2{
+        margin-bottom: 2%;
+
+    }
+
+    h3{
+        color: aliceblue;
+        margin: 3%;
+    }
+
+/**--------------------Home-----------------*/
+
+.home{
+    background-color: gray;
+    background-image: url("./images/LicEdited.jpeg");
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    background-size: cover;
+}
+
+.homeNameDiv-lg{
+    margin: 0;
+    padding: 4%;
+    width: 95.2%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
+}
+
+.homeNameDiv-sm{
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
+}
+
+.homeNameTextDiv, h2{
+    color: white;
+}
+
+.SchoolCard{
+    opacity: 70%;
+}
+
+.schoolText{
+    font-size: small;
+}
+
+.SkillCard{
+    opacity: 50%;
+}
+
+.skillType{
+    opacity: 60%;
+    color: black;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width:0.005em;
+}
+
+p{
+    margin: 20px;
+}
+
+/**--------------------Experience-----------------*/
+
+.experience{
+    background-color: gray;
+    background-image: url("./images/LicRedEdited.jpeg");
+    background-size: cover;
+}
+
+.job-card-sm{
+    width: 94%;
+}
+
+.job-card-lg{
+    width: 33%;
+}
+
+.job-card-bg{
+    padding: 3%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.01em;
+    border-radius: 0%;
+}
+
+.job-text-color{
+    color: lightgray;
+}
+
+/**--------------------Projects-----------------*/
+
+.projects{
+    background-color: gray;
+    background-image: url("./images/LicDarkEdited.jpeg");
+    background-size: cover;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.fuller-card-sm{
+    display: flex;
+    margin-top: 2%;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    width: 94%;
+    align-items: center;
+
+}
+
+.fuller-card-lg{
+    display: flex;
+    background-color: dimgray;
+    opacity: 80%;
+    width: 40%;
+    margin-right: 2%;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.01em;
+
+}
+
+.full-card{
+    border-radius: 5px;
+    margin-bottom: 4%;
+
+}
+
+.card-caption{
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-top-color: gray;
+    border-left-color: gray;
+    border-right-color: gray;
+    border-bottom-color: transparent;
+    border-top-style: outset;
+    border-left-style: outset;
+    border-right-style: outset;
+    border-bottom-style: none;
+    border-top-width: 0.01em;
+    border-left-width: 0.01em;
+    border-right-width: 0.01em;
+    border-bottom-width: 0;
+}
+
+.card-bg{
+
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
+}
+
+.card-txt{
+    margin: 4%;
+    padding: 2%
+}
+
+.card-bg{
+    padding: 6%;
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+
+.card-body{
+    padding: 2%;
+}
+
+card-caption{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8%;
+}
+
+.btns-a{
+    margin-top: 7%;
+    margin-bottom: 2.5%;
+    margin-left: 1px;
+    padding: 3%;
+}
+
+.btns.b{
+    padding-top: 10%
+
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.card-img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+
+.card-image{
+    border-bottom: gray 1px transparent;
+}
+
+.carousel-control-next{
+    z-index: 100;
+    height: 100%;
+}
+
+.buttonClass{
+    background-color:aliceblue;
+
+}
+
+.button-space{
+    margin-bottom: 5%;
+}
+
+/**--------------------Wall-----------------*/
+
+.wall{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    display: grid;
+    background-image: url("./images/LicDarkEdited.jpeg");
+    background-size:cover;
+
+}
+
+.wall::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(210, 180, 40, 0.2); /* Black tint with 50% opacity */
+    z-index: 0;
+}
+
+.square{
+    background-color: #796141;
+    opacity: 50%;
+    border: 1px solid black;
+    width: 23vw;
+    height: 7vw;
+    position: relative;
+    box-sizing: border-box;
+    margin: .5vw;
+    box-shadow: 1.5vw 1.5vw 0px black;
+    font-size: 2.2vw;
+
+    /* styling text inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+p{
+    font-weight: bolder;
+    opacity: 200%;
+
+}
+
+.square:hover{
+    opacity: 80%;
+}
+
+.square:nth-child(10n + 1){
+    margin-left: -10.5vw;
+}
+
+.square:nth-child(10n + 2){
+    margin-left: -10.5vw;
+}
+
+.square:nth-child(10n + 3){
+    margin-left: -10.5vw;
+}
+
+.square:nth-child(10n + 4){
+    margin-left: -10.5vw;
+}
+
+.square:nth-child(10n + 5){
+        margin-left: -10.5vw;
+
+}
+
+.square:nth-child(3n + 1){
+    box-shadow: 1.5vw 1.5vw 0px black;
+    background-color: gray;
+    opacity: 40%;
+
+}
+.square:nth-child(3n + 2){
+    box-shadow: 1.5vw 1.5vw 0px black;
+    background-color: #967969;
+    opacity: 45%;
+
+}
+
+
+
