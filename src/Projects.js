@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectsBackground from './images/LicDarkEdited.jpeg';
 
 let addressa1 = "./jobly_screenshot1.jpg";
 let addressb1 = "./jobly_screenshot2.jpg";

@@ -1,6 +1,7 @@
 import React from "react";
 import JobsPageLarge from "./JobsPageLarge";
 import JobsPageSmall from "./JobsPageSmall";
+import jobsBackground from './images/LicRedEdited.jpeg';
 
 function Jobs(screenSize) {
 

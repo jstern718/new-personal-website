@@ -1,9 +1,11 @@
 import React from "react"
 import HomePageLarge from "./HomePageLarge";
 import HomePageSmall from "./HomePageSmall";
-
+import HomeBackground from './images/LicEdited.jpeg';
 
 function Home(screenSize) {
+
+    console.log("Home screen size", screenSize);
 
     const homeScreenSize = screenSize.screenSize;
 
@@ -23,20 +25,27 @@ function Home(screenSize) {
     const date3 = "May 2007";
 
     const skillType1 = "Languages";
-    const skills1 = ["Javascript", "Python", "HTML", "CSS", "SQL"];
+    const skills1 = ["", "Javascript", "Typescript", "", "Python", "HTML", "CSS", "", "SQL", "", ""];
 
     const skillType2 = "Libraries & Frameworks";
-    const skills2 = ["React", "Express", "Node", "Django", "Flask", "PostgreSQL", "SQLite", "SQLAlchemy", "Bootstrap", "MUI"];
+    const skills2 = ["", "React", "Express", "", "Node", "Django", "Flask",
+                     "", "PostgreSQL", "SQLite", "", "SQLAlchemy", "jQuery",
+                     "Bootstrap", "", "MUI", "", ""];
 
     const skillType3 = "Testing & Tools";
-    const skills3 = ["Jest", "Unittest", "React Testing Library", "Jasmine", "SuperTest",  "VSCode", "Git", "Github"];
+    const skills3 = ["", "AWS", "Docker", "", "Git", "Github", "VSCode", "", "Jasmine",
+                     "SuperTest", "", "Jest", "Unittest", "React Testing Library"];
+
+    const skillType4 = "Soft Skills";
+    const skills4 = ["", "Communication", "Teamwork", "", "Pair Programming", "Research",
+                     "Problem Solving"];
 
         const props = {school1, school2, school3,
                        city1, city2, city3,
                        degree1, degree2, degree3,
                        date1, date2, date3,
-                       skillType1, skillType2, skillType3,
-                       skills1, skills2, skills3};
+                       skillType1, skillType2, skillType3, skillType4,
+                       skills1, skills2, skills3, skills4};
 
         console.log("props", props);
         console.log("homeScreenSize");
@@ -54,7 +63,5 @@ function Home(screenSize) {
     }
 
 }
-
-
 
 export default Home;

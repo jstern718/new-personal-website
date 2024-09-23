@@ -1,16 +1,17 @@
-import React, {useState, useEffect} from "react";
-import {
-  BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
-
-import './App.css';
-import { useWindowDimension } from "./utils";
-
-import Jobs from "./Jobs";
-import Projects from "./Projects";
-import Home from "./Home";
+import React, {useState, useEffect, Suspense} from "react";
+import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import Wall from "./Wall"
 import NavBar from "./NavBar";
+import './App.css';
+import Loading from './Loading';
+import { useWindowDimension } from "./utils";
 
+const Jobs = React.lazy(
+    () => import('./Jobs'));
+const Projects = React.lazy(
+    () => import('./Projects'));
+const Home = React.lazy(
+    () => import('./Home'));
 
 function App() {
 
@@ -64,13 +65,19 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <NavBar />
-            <Routes>
-                <Route path="/Jobs" element={<Jobs screenSize={screenSize}/>} />
-                <Route path="/Projects" element={<Projects screenSize={screenSize}/>} />
-                <Route path="/Wall" element={<Wall screenSize={screenSize}/>} />
-                <Route path="/" element={<Home screenSize={screenSize}/>} />
+            <Suspense fallback={<Loading />}>
+                <Routes>
+                    <Route path="/Jobs" element={
+                        <Jobs screenSize={screenSize} />} />
+                    <Route path="/Projects" element={
+                        <Projects screenSize={screenSize} />} />
+                    <Route path="/Wall" element={
+                        <Wall screenSize={screenSize}/>} />
+                    <Route path="/" element={
+                        <Home screenSize={screenSize} />} />
 
-            </Routes>
+                </Routes>
+            </Suspense>
         </BrowserRouter>
 
     </div>

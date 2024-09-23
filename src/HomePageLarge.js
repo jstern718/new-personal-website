@@ -8,15 +8,15 @@ function HomePageLarge(props){
     city1, city2, city3,
     degree1, degree2, degree3,
     date1, date2, date3,
-    skillType1, skillType2, skillType3,
-    skills1, skills2, skills3} = props.props;
+    skillType1, skillType2, skillType3, skillType4,
+    skills1, skills2, skills3, skills4} = props.props;
 
     const bioDiv =
         <div className="homeNameDiv-lg">
             <div className="homeNameTextDiv">
                 <h2>Jonathan Stern</h2>
                 <p>Brooklyn, NY - 201.906.0125 -<span> </span>
-                <a href="jstern.dev@gmail.com"
+                <a href="mailto:jstern.dev@gmail.com"
                     className="text-light">Email</a> -<span> </span>
                     <a href="https://www.linkedin.com/in/jstern-dev/"
                     className="text-light">LinkedIn</a> -<span> </span>
@@ -47,6 +47,7 @@ function HomePageLarge(props){
                         <SkillsLarge skillType={skillType1} skills = {skills1} />
                         <SkillsLarge skillType={skillType2} skills = {skills2} />
                         <SkillsLarge skillType={skillType3} skills = {skills3} />
+                        <SkillsLarge skillType={skillType4} skills = {skills4} />
                     </div>
                 </div>
                 <div className="col-4 my-3 homeSpace">
