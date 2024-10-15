@@ -28,9 +28,9 @@ function Home(screenSize) {
     const skills1 = ["", "Javascript", "Typescript", "", "Python", "HTML", "CSS", "", "SQL", "", ""];
 
     const skillType2 = "Libraries & Frameworks";
-    const skills2 = ["", "React", "Express", "", "Node", "Django", "Flask",
-                     "", "PostgreSQL", "SQLite", "", "SQLAlchemy", "jQuery",
-                     "Bootstrap", "", "MUI", "", ""];
+    const skills2 = ["", "React", "Express", "", "Node", "NextJS", "Svelte", "", "Django", "Flask",
+                     "", "PostgreSQL", "SQLAlchemy", "Tailwind", "",
+                     "Bootstrap", "MUI", ""];
 
     const skillType3 = "Testing & Tools";
     const skills3 = ["", "AWS", "Docker", "", "Git", "Github", "VSCode", "", "Jasmine",
@@ -50,7 +50,7 @@ function Home(screenSize) {
         console.log("props", props);
         console.log("homeScreenSize");
 
-    if (homeScreenSize === 'large'){
+    if (homeScreenSize >= 600){
         console.log("large screen return");
         return (
             <HomePageLarge props={props}/>

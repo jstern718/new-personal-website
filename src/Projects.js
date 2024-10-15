@@ -28,7 +28,7 @@ function Projects(screenSize) {
     const projectsScreenSize = screenSize.screenSize;
     console.log("projectsScreenSize", projectsScreenSize)
 
-    if (projectsScreenSize === 'large'){
+    if (projectsScreenSize >= 700){
         return (
             <div className="projects">
                 <div className="projects-row">

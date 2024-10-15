@@ -11,11 +11,7 @@ function Wall(props){
 
     return (
         <div className="wall">
-            {Array.from({ length: 80 }).map((_, i) => (
-                <div key={i} className="square four">
-                    <p>{combinedSkills[i]}</p>
-                </div>
-        ))}
+            <a href="https://www.amazon.com/ONIVA-Picnic-Brand-Portable-Reclining/dp/B0012RI37C?ref_=orc_rcmdn_wdgt_prep_d_3_image&th=1"></a>
         </div>
     );
 

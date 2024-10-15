@@ -11,8 +11,8 @@ function SkillsLarge({skillType, skills}) {
     let skillsLength = skills.length;
 
     return (
-      <div className="col-4 card-bg m-2 p-2 d-flex flex-column flex-fill skillType homeSpace">
-        <h5 className="m-3">{skillType}</h5>
+      <div className="col-4 card-bg m-2 p-2 d-flex flex-column flex-fill skillType homeSpace subSkillSpace">
+        <h5 className="skillTypeTitles">{skillType}</h5>
         <div className="SkillCard">
             <div className="wall2">
                 {Array.from({ length: skillsLength }).map((_, i) => (

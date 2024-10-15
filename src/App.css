@@ -19,9 +19,8 @@
 /**--------------------Home-----------------*/
 
 .home{
-    background-color: white;
-    /* background-color: gray; */
-    /* background-image: url("./images/LicEdited.jpeg"); */
+    background-color: gray;
+    background-image: url("./images/LicEdited.jpeg");
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -55,10 +54,33 @@
 
 .homeNameTextDiv, h2{
     color: white;
+
+}
+
+.personal-summary{
+    text-align:justify;
 }
 
 .SchoolCard{
-    opacity: 70%;
+    opacity: 90%;
+}
+
+.SchoolCard:nth-of-type(1){
+    background-color: #898c83;
+    opacity: 90%;
+}
+
+.SchoolCard:nth-of-type(2){
+    /* background-color: #f59794; */
+    background-color: #969069;
+    color: #2D2926;
+    opacity: 80%;
+}
+
+.SchoolCard:nth-of-type(3){
+    /* background-color: #9bddff; */
+    background-color: gray;
+    opacity: 95%;
 }
 
 .schoolText{
@@ -73,10 +95,7 @@
 .skillType{
     opacity: 70%;
     color: black;
-    border-color: whitesmoke;
-    border-style: solid;
-    border-width:0.005em;
-    height: 100%;
+    height: 95%;
 }
 
 p{
@@ -91,28 +110,72 @@ p{
     background-size: cover;
 }
 
+
 .job-card-sm{
     width: 94%;
 }
 
 .job-card-lg{
-    width: 33%;
+
+    flex-basis: 47%;
+    margin: 1%;
+    box-sizing: border-box;
+
+}
+
+.job-card-lg2{
+
+    flex-basis: 47%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.job-card-lg2{
+    height: 100%;
 }
 
 .job-card-bg{
+    font-size: small;
     padding: 3%;
+    margin: 2%;
     background:dimgrey;
     color: white;
     opacity: 75%;
-    border-color: gray;
+    /* border-color: gray;
     border-style: outset;
     border-width: 0.01em;
-    border-radius: 0%;
+    border-radius: 0%; */
+    box-shadow: 6px 6px 6px black;
 }
 
 .job-text-color{
     color: lightgray;
+    font-size: small;
 }
+
+.jobs-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%
+}
+
+.job-bullet{
+    border: 1px solid gray;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-left: 30px;
+    box-shadow: 6px 6px 3px black;
+    opacity: 80%;
+    background-color: silver;
+    color: black
+}
+
+.job-bullet:last-of-type{
+    margin-bottom: -5px;
+}
+
 
 /**--------------------Projects-----------------*/
 
@@ -154,6 +217,7 @@ p{
     border-color: gray;
     border-style: outset;
     border-width: 0.01em;
+    box-shadow: 8px 8px 6px black;
 
 }
 
@@ -188,7 +252,7 @@ p{
 
     margin: 0;
     padding: 4%;
-    background:dimgrey;
+    /* background:dimgrey; */
     color: white;
     opacity: 75%;
     flex-basis: max-content;
@@ -285,7 +349,8 @@ card-caption{
         "o p q r";
     font-size: 10px;
     position: relative;
-    height: 70%;
+    /* height: 80%; */
+    margin-bottom: 20px;
 }
 
 /* .wall2 :first-child{
@@ -328,12 +393,12 @@ card-caption{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(210, 180, 40, 0.2); /* Black tint with 50% opacity */
+    /* background-color: rgba(210, 180, 40, 0.2); Black tint with 50% opacity */
     z-index: 0;
 }
 
 .square2{
-    background-color: #796141;
+    background-color: #9c8b72;
     opacity: 100%;
     border: 1px solid black;
     width: 90%;
@@ -591,31 +656,98 @@ p{
 }
 
 .square2:nth-child(5n + 1){
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: #7C7362;
     color: white;
     opacity: 100%;
 
 }
 .square2:nth-child(5n + 2){
-    background-color: #967969;
+    /* background-color: #967969; */
+    background-color: #898c83;
     color: white;
     opacity: 90%;
 
 }
 
 .square2:nth-child(5n + 3){
-    background-color: #697896;
+    /* background-color: #697896; */
+    background-color: #787354;
     color: white;
     opacity: 90%;
 
 }
 
 .square2:nth-child(5n + 4){
-    background-color: #285251;
+    /* background-color: #285251; */
+    background-color: #969069;
     color: white;
     opacity: 90%;
 
 }
 
+/**-------------------new----------------*/
 
-/**--------------------edit-----------------*/
+.skillSpace{
+    background-color: none;
+    opacity: 80%;
+    margin-bottom: 5%;
+}
+
+.skillSpace > :nth-child(2){
+    margin-left: 18px !important;
+}
+
+.skillSpace > :nth-child(3){
+    margin-top: -13% !important;
+}
+
+.skillSpace > :nth-child(4){
+    margin-top: 5% !important;
+    margin-left: 18px !important;
+}
+
+.subSkillSpace{
+    box-shadow: 6px 6px 6px black;
+    color: black;
+    border-top: 1px ridge black;
+    border-left: 1px ridge black;
+    margin-bottom: 20px;
+
+}
+
+.education-title{
+    background-color: lightgray;
+    opacity: 80%;
+    color: black !important;
+    border: 1px solid dimgray;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the text vertically */
+
+}
+
+.education-card{
+    box-shadow: 6px 6px 6px black;
+    border-top: 1px ridge black;
+    border-left: 1px ridge black;
+    margin-top: 16px;
+}
+
+.skillTypeTitles{
+    /* border: 1px solid dimgray; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    margin-left: -9px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 1px ridge black;
+}
+
+hr{
+   height: 3px;
+   background-color: white;
+}

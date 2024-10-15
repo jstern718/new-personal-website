@@ -22,12 +22,14 @@ function HomePageLarge(props){
                     className="text-light">LinkedIn</a> -<span> </span>
                     <a href="https://github.com/jstern718"
                     className="text-light">GitHub</a></p>
-                <div className="text-start">
-                    <p className="px-4">Software engineer seeking to put full stack skills to use in a
-                challenging junior engineer role — and to leverage past
-                experience with client communication, working under strict
-                deadlines, in-depth research, attention to detail, public
-                speaking and working with and managing teams.</p>
+                <div className="text-start m-3">
+                    <p className="px-4">Software engineer with experience
+                    and grit looking for an opportunity to make an impact;
+                    eager to take on ownership over projects and to put skills
+                    to use at a challenging junior engineer position – and to
+                    leverage past experience working in fast-paced environments
+                    and with client communication, in-depth research, attention
+                    to detail, and analytical problem-solving skills.</p>
                 </div>
             </div>
         </div>
@@ -42,8 +44,8 @@ function HomePageLarge(props){
             <br/>
             <div className="row homeSpace">
                 <div className="col-7 my-3 mx-4 p-0">
-                    <h4 className="text-light">Skills</h4>
-                    <div className="row homeSpace">
+                    <h4 className="text-light education-title">Skills</h4>
+                    <div className="row homeSpace skillSpace">
                         <SkillsLarge skillType={skillType1} skills = {skills1} />
                         <SkillsLarge skillType={skillType2} skills = {skills2} />
                         <SkillsLarge skillType={skillType3} skills = {skills3} />
@@ -51,13 +53,13 @@ function HomePageLarge(props){
                     </div>
                 </div>
                 <div className="col-4 my-3 homeSpace">
-                    <h4 className="text-light">Education</h4>
-                    <div className="card-bg ">
-                        <School school={school1} city={city1}
+                    <h4 className="text-light education-title">Education</h4>
+                    <div className="card-bg education-card">
+                        <School className="school1" school={school1} city={city1}
                             degree={degree1} date={date1} />
-                        <School school={school2} city={city2}
+                        <School className="school2" school={school2} city={city2}
                             degree={degree2} date={date2} />
-                        <School school={school3} city={city3}
+                        <School className="school3" school={school3} city={city3}
                             degree={degree3} date={date3} />
                     </div>
                 </div>

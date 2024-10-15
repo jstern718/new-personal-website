@@ -24,34 +24,15 @@ function App() {
 
        function firstCheckWidth(){
             console.log("first check width");
-            let internalWidth = window.innerWidth;
-            if (internalWidth >= 1000){
-                setScreenSize("large");
-                console.log("1 large");
-                return "large";
-            }
-            else{
-                setScreenSize("small");
-                console.log("1 small");
-                return "small";
-            }
+            setScreenSize(window.innerWidth);
         }
         firstCheckWidth();
     }, []);
 
     useEffect(()=> {
-        async function secondCheckWidth(width){
+        async function secondCheckWidth(){
             console.log("second check width");
-            if (newWidth >= 1000){
-                setScreenSize("large");
-                console.log("2 large");
-                return "large";
-            }
-            else{
-                setScreenSize("small");
-                console.log("2 small");
-                return "small";
-            }
+            setScreenSize(window.innerWidth);
         }
         if (screenSize){
             secondCheckWidth()

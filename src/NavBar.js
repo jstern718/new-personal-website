@@ -8,7 +8,6 @@ function NavBar() {
             <NavLink to="/" className={({ isActive }) => isActive ? "active navbar-text" : "navbar-text"}> Home </NavLink>
             <NavLink to="/Jobs" className="navbar-text"> Experience </NavLink>
             <NavLink to="/Projects" className="navbar-text"> Projects </NavLink>
-            <NavLink to="/Wall" className="navbar-text"> Wall </NavLink>
         </nav>);
   }
 
