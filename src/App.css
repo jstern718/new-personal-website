@@ -20,7 +20,7 @@
 
 .home{
     background-color: gray;
-    background-image: url("./images/LicEdited1.jpeg");
+    background-image: url("./images/LicEdited.jpeg");
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -106,7 +106,7 @@ p{
 
 .experience{
     background-color: gray;
-    background-image: url("./images/LicRedEdited1.jpeg");
+    background-image: url("./images/LicRedEdited.jpeg");
     background-size: cover;
 }
 
@@ -181,7 +181,7 @@ p{
 
 .projects{
     background-color: gray;
-    background-image: url("./images/LicDarkEdited1.jpeg");
+    background-image: url("./images/LicDarkEdited.jpeg");
     background-size: cover;
     padding: 2%;
     display: flex;
@@ -329,7 +329,6 @@ card-caption{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     display: grid;
-    background-image: url("./images/LicDarkEdited.jpeg");
     background-size:cover;
 
 }
