@@ -50,7 +50,7 @@ function Home(screenSize) {
         console.log("props", props);
         console.log("homeScreenSize");
 
-    if (homeScreenSize >= 600){
+    if (homeScreenSize >= 800){
         console.log("large screen return");
         return (
             <HomePageLarge props={props}/>

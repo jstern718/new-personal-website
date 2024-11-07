@@ -18,9 +18,63 @@
 
 /**--------------------Home-----------------*/
 
+
+.bioDiv{
+    height: 500px;
+    display: flex;
+}
+
+.bio-paragraph{
+    text-wrap: balance;
+
+}
+
+
+@media (width <= 900px) {
+    .bio-paragraph{
+        font-size: small;
+        padding: 5px;
+    }
+}
+
+@media (1000px <= width <= 1100px) {
+    .bio-paragraph{
+        font-size: large;
+
+    }
+    .homeNameTextDiv{
+        margin-right: 5%;
+    }
+}
+
+@media (1101px <= width <= 1300px) {
+    .homeNameTextDiv{
+        padding: 5px;
+    }
+    .bio-paragraph{
+        font-size: larger;
+    }
+    .homeNameTextDiv{
+        margin-right: 6%;
+    }
+}
+
+@media (1301px <= width) {
+    .homeNameTextDiv{
+        padding: 20px;
+    }
+    .bio-paragraph{
+        font-size: larger;
+
+    }
+    .homeNameTextDiv{
+        margin-right: 9%;
+    }
+}
+
+
 .home{
-    background-color: gray;
-    background-image: url("./images/LicEdited.jpeg");
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -28,32 +82,47 @@
 }
 
 .homeNameDiv-lg{
-    margin: 0;
-    padding: 4%;
-    width: 95.2%;
-    background:dimgrey;
-    color: white;
+    color: black;
     opacity: 75%;
-    flex-basis: max-content;
+    padding: 0;
+
+    /* flex-basis: max-content; */
     border-color: gray;
-    border-style: outset;
-    border-width: 0.005em;
+    /* border-style: outset;
+    border-width: 0.005em; */
+
+}
+
+.home-name-space{
+    padding: 0;
+
 }
 
 .homeNameDiv-sm{
     margin: 0;
     padding: 4%;
-    background:dimgrey;
-    color: white;
+    color: whitesmoke;
     opacity: 75%;
     flex-basis: max-content;
-    border-color: gray;
-    border-style: outset;
-    border-width: 0.005em;
+
+
 }
 
-.homeNameTextDiv, h2{
-    color: white;
+.homeNameTextDiv{
+    color: black;
+    margin-left: -5px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+.homeNameTextDiv-sm{
+    color: black;
+    margin-left: -5px;
+    box-shadow: 6px 6px 6px lightgray;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+
 
 }
 
@@ -105,14 +174,27 @@ p{
 /**--------------------Experience-----------------*/
 
 .experience{
-    background-color: gray;
-    background-image: url("./images/LicRedEdited.jpeg");
-    background-size: cover;
+    background: radial-gradient(circle at left in hsl,
+    lightslategray,  white,  slategray);
+    /* background-image: url("./images/LicRedEdited.jpeg"); */
+    /* background-size: cover; */
 }
 
+.job-img{
+    filter: invert(20%) sepia(80%);
+    box-shadow: 6px 6px 6px black;
+    margin-top: -25px;
+    width: 105%; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.job1{
+    width: 105%;
+}
 
 .job-card-sm{
     width: 94%;
+    color:
 }
 
 .job-card-lg{
@@ -124,7 +206,6 @@ p{
 }
 
 .job-card-lg2{
-
     flex-basis: 47%;
     margin: 1%;
     box-sizing: border-box;
@@ -138,18 +219,17 @@ p{
     font-size: small;
     padding: 3%;
     margin: 2%;
-    background:dimgrey;
-    color: white;
-    opacity: 75%;
-    /* border-color: gray;
+    border-color: gray;
+    background-color: whitesmoke;
+    opacity: 60%;
     border-style: outset;
     border-width: 0.01em;
-    border-radius: 0%; */
+    border-radius: 0%;
     box-shadow: 6px 6px 6px black;
 }
 
 .job-text-color{
-    color: lightgray;
+    color: black;
     font-size: small;
 }
 
@@ -167,8 +247,8 @@ p{
     padding: 20px;
     padding-left: 30px;
     box-shadow: 6px 6px 3px black;
-    opacity: 80%;
-    background-color: silver;
+    opacity: 90%;
+    background-color: lightgray !important;
     color: black
 }
 
@@ -326,7 +406,6 @@ card-caption{
 /**--------------------Wall-----------------*/
 
 .wall{
-    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     display: grid;
     background-size:cover;
@@ -694,16 +773,19 @@ p{
 }
 
 .skillSpace > :nth-child(2){
-    margin-left: 18px !important;
+    /* margin-left: 18px !important; */
+    margin-left: 14px !important;
+    margin-right: -8px !important;
 }
 
 .skillSpace > :nth-child(3){
-    margin-top: -13% !important;
+    margin-top: -16% !important;
 }
 
 .skillSpace > :nth-child(4){
     margin-top: 5% !important;
-    margin-left: 18px !important;
+    margin-left: 14px !important;
+    margin-right: -8px !important;
 }
 
 .subSkillSpace{
@@ -725,6 +807,20 @@ p{
     justify-content: center;
     align-items: center; /* This centers the text vertically */
 
+
+}
+
+.skill-title{
+    background-color: lightgray;
+    opacity: 80%;
+    color: black !important;
+    border: 1px solid dimgray;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+    margin-left: -5px;
 }
 
 .education-card{
@@ -738,7 +834,8 @@ p{
     /* border: 1px solid dimgray; */
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: white;
+    background-color: lightgray;
+    color: black;
     margin-left: -9px;
     margin-right: 30px;
     margin-top: 20px;
