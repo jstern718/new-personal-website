@@ -12,12 +12,11 @@ function JobsPageLarge(props){
     return (
         <div className="experience p-5">
 
-            <div className="jobs-flex">
+            <div className="jobs-flex row">
                 <div className="job-card-lg mt-5">
-                    <hr />
-                    <h2>Experience</h2>
-                    <hr />
-                    <div className="mt-5 mb-3">
+                    <img src="/LicRedEdited.jpeg" alt="dockImg" className="col-12 job-img" />
+                    <h2 className="mt-5 mb-1">- Experience -</h2>
+                    <div className="mt-5 mb-3 job1">
                         <Job position={position2} firm={firm2} city={city2} dates={dates2} description={description2}/>
                     </div>
                 </div>
@@ -25,18 +24,20 @@ function JobsPageLarge(props){
                     <div className="job-card-lg3">
                         <Job position={position1} firm={firm1} city={city1} dates={dates1} description={description1}/>
                     </div>
+                    <br />
+                    <div className="">
+                    <Job position={position3} firm={firm3} city={city3} dates={dates3} description={description3}/>
+                    </div>
                 </div>
 
             </div>
             <div>
-                <div className="">
-                    <Job position={position3} firm={firm3} city={city3} dates={dates3} description={description3}/>
-                </div>
+
             </div>
             <div>
                 <div>
                     <hr />
-                    <h4 className="text-light">Prior Experience</h4>
+                    <h4 className="text-black">Prior Experience</h4>
                     <hr />
                 </div>
 
