@@ -1,8 +1,79 @@
 import React from "react";
 import School from "./School";
 import SkillsLarge from "./SkillsLarge";
+import anime from 'animejs/lib/anime.es.js';
+import { useEffect } from "react";
+
+
 
 function HomePageLarge(props){
+
+    useEffect(() => {
+
+        // let imgClass = document.querySelector(".img-class");
+        // imgClass.style.opacity = 0;
+        // let imgWidth = imgClass ? imgClass.offsetWidth : 0;
+        // let imgHeight = imgClass ? imgClass.offsetHeight : 0;
+        // let imgLeft = imgClass ? imgClass.offsetLeft : 0;
+        // let imgTop = imgClass ? imgClass.offsetTop : 0;
+        // let imgCover = document.createElement("div");
+        // imgCover.className = "img-cover";
+        // imgCover.style.width = `${imgWidth}px`;
+        // imgCover.style.height = `${imgHeight}px`;
+        // imgCover.style.left = `${imgLeft}px`;
+        // imgCover.style.top = `${imgTop}px`;
+
+
+        let tl1 = anime.timeline({});
+        let tl2 = anime.timeline({});
+
+        tl2.add({
+            targets: '.subSkillSpace',
+            delay: anime.stagger(1000,  {start: 500}),
+            easing:'spring(1, 80, 20, 0)',
+            duration: 200,
+            translateY: [-3000, 0]
+        });
+        tl2.add({
+            targets: '.square2',
+            delay: anime.stagger(
+                    200, {direction:'reverse'},
+                ),
+            easing:'spring(1, 80, 20, 0)',
+            duration: 12000,
+            translateY: [-3000, 0]
+            });
+
+        tl1.add({
+            targets: '.snow',
+            delay: anime.stagger(
+                10, {direction:'alternate', start: 0}),
+            easing: 'spring(1, 80, 20, 0)',
+            duration: 13000,
+            translateY: [-3000, 0]
+        });
+        tl1.add({
+            targets: '.card-bg',
+            backgroundColor: 'white',
+        });
+        tl1.add({
+            targets: '.bio-paragraph',
+            color: "#000000",
+        });
+        tl1.add({
+            targets: '.snow',
+            opacity: 0,
+        });
+
+
+    }, []);
+
+
+
+
+    let snowArr = Array.from({ length: 2000 }, (_, i) => i);
+    let vh = 2 * window.innerHeight;
+    let vw = window.innerWidth;
 
     let pageWidth = document.getElementById("root").clientWidth;
 
@@ -49,10 +120,21 @@ function HomePageLarge(props){
     console.log("HomePageLarge");
 
 
+
     return(
         <div className="home p-3">
-            <div className="row col-12">
-                <img src="/LicEdited.jpeg" alt="dockImg" className="col-8" />
+            <div className="img-super-div row col-12">
+                {snowArr.map((snow, index) => (
+                    <div key={index} className="snow" style={{ backgroundColor: 'white',
+                                                               height: '7px',
+                                                               width: '7px',
+                                                               margin: '0px',
+                                                               padding: '0px',
+                                                               borderRadius: '50%',
+                                                               top: `${80 + vh * Math.random()}px`,
+                                                               left: `${vw * Math.random()}px`, }}></div>
+                ))}
+                <img src="/LicEdited.jpeg" alt="dockImg" className="img-class col-8" />
                 <div className="home-name-space col-4 bg-white">
                     {bioDiv}
                 </div>
@@ -84,4 +166,4 @@ function HomePageLarge(props){
     );
 }
 
-export default HomePageLarge;
+export default HomePageLarge
