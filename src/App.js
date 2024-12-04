@@ -37,7 +37,7 @@ function App() {
         if (screenSize){
             secondCheckWidth()
         }
-    }, [newWidth]);
+    }, [newWidth, screenSize]);
 
 
     console.log("app ss", screenSize);

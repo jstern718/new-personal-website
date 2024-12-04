@@ -1,3 +1,25 @@
+
+    .img-class{
+
+    }
+
+    img-cover{
+        position:absolute;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .img-super-div{
+        opacity: 100%;
+    }
+
+    .snow{
+        position: absolute;
+        display: block;
+        z-index: 1;
+
+    }
+
 /** ----------------multiple-------------------- */
 
     .App {
@@ -26,6 +48,7 @@
 
 .bio-paragraph{
     text-wrap: balance;
+    color: gray;
 
 }
 
@@ -349,7 +372,8 @@ p{
 .card-bg{
     padding: 6%;
     margin-top: 4%;
-    margin-bottom: 4%
+    margin-bottom: 4%;
+    background-color: lightgray;
 }
 
 .card-body{
@@ -489,6 +513,7 @@ card-caption{
     font-size: 2em;
     font-weight: bolder;
 
+
     /* styling text inside */
     display: flex;
     justify-content: center;
@@ -496,6 +521,7 @@ card-caption{
     text-align: center;
     overflow: hidden;
     container-type:inline-size;
+
 }
 
 

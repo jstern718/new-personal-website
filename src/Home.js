@@ -1,7 +1,6 @@
 import React from "react"
 import HomePageLarge from "./HomePageLarge";
 import HomePageSmall from "./HomePageSmall";
-import HomeBackground from './images/LicEdited.jpeg';
 
 function Home(screenSize) {
 
