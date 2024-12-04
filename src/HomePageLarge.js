@@ -68,9 +68,6 @@ function HomePageLarge(props){
 
     }, []);
 
-
-
-
     let snowArr = Array.from({ length: 2000 }, (_, i) => i);
     let vh = 2 * window.innerHeight;
     let vw = window.innerWidth;
